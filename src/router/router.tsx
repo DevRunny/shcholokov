@@ -22,12 +22,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         path: Routes.DETAILS_POST,
-        element: (
-          <>
-            <DetailsPost />
-            <Outlet />
-          </>
-        ),
+        element: <DetailsPost />,
         errorElement: <ErrorPage />,
       },
     ],

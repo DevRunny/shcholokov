@@ -8,7 +8,7 @@ import classNames from "classnames";
 export const DetailsPost: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const pathname = location.pathname.split("/")[2];
+  const pathname = location.pathname.split("/")[3];
   const overlayRef = useRef<HTMLDivElement>(null);
 
   const defaultDocumentTitle = "Александр Щёлоков";
