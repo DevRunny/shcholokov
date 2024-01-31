@@ -5,7 +5,7 @@ import { ErrorPage } from "../components/ErrorPage/ErrorPage";
 
 export enum Routes {
   MAIN = "/shcholokov/",
-  DETAILS_POST = "/shcholokov/details-post/:alias",
+  DETAILS_POST = "details-post/:alias",
 }
 
 export const router = createBrowserRouter([
@@ -20,9 +20,14 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        index: false,
+        index: true,
         path: Routes.DETAILS_POST,
-        element: <DetailsPost />,
+        element: (
+          <>
+          <DetailsPost />
+          <Outlet />
+          </>
+        ),
         errorElement: <ErrorPage />,
       },
     ],
