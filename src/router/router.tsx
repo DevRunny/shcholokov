@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
+        index: false,
         path: Routes.DETAILS_POST,
         element: <DetailsPost />,
         errorElement: <ErrorPage />,
