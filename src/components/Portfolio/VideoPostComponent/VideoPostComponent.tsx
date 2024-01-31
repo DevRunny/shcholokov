@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./VideoPostComponent.module.css";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { Routes } from "../../../router/router";
 
 interface IProps {
   id: number;
@@ -16,7 +17,7 @@ export const VideoPostComponent: React.FC<IProps> = (props) => {
   const { id, title, shortDescription, preview, tags, alias } = props;
 
   return (
-    <Link to={`/details-post/${alias}`}>
+    <Link to={`${Routes.MAIN}details-post/${alias}`}>
       <div key={id} className={styles.videoPost}>
         <div className={styles.videoPreview}>
           <img src={preview} alt={"previewPost"} />
