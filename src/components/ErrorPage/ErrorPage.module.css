@@ -1,0 +1,14 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+.goBackButton {
+  font-weight: 600;
+  background: #ff6f00;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}

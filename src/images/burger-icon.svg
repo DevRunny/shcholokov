@@ -1,0 +1,12 @@
+<svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Burger_icon" clip-path="url(#clip0_416_191)">
+        <rect id="Rectangle 75" width="34" height="2" rx="1" fill="#ff6f00"/>
+        <rect id="Rectangle 76" y="8" width="34" height="2" rx="1" fill="#ff6f00"/>
+        <rect id="Rectangle 77" y="16" width="34" height="2" rx="1" fill="#ff6f00"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_416_191">
+            <rect width="34" height="18" fill="white"/>
+        </clipPath>
+    </defs>
+</svg>

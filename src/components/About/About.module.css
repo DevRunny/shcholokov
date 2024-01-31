@@ -1,0 +1,135 @@
+.about {
+  background: #111111;
+  padding: 1.302vw 0 4.3vw 0;
+  overflow: hidden;
+}
+
+.about h2 {
+  animation: up-down-ani 0.5s ease-in-out;
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.344vw;
+  overflow: hidden;
+}
+
+.aboutContent span {
+  font-size: 1.042vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  gap: 1.823vw;
+  width: 40%;
+
+  animation: up-down-ani 1.5s ease-in-out;
+}
+
+.aboutTech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.823vw;
+  width: 50%;
+
+  animation: to-up-ani 1.5s ease-in-out;
+}
+
+.aboutTech img {
+  width: 15%;
+  pointer-events: none;
+}
+
+.aboutUnity {
+  display: flex;
+  align-items: center;
+  gap: 1.042vw;
+}
+
+.aboutCode {
+  display: flex;
+  align-items: center;
+  gap: 1.042vw;
+}
+
+@keyframes up-down-ani {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes to-up-ani {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (orientation: portrait) {
+  .about {
+    padding: 4vw 0 4vw 0;
+  }
+
+  .aboutContent {
+    flex-direction: column;
+    gap: 7vw;
+    margin-top: 7vw;
+  }
+
+  .aboutContent span {
+    font-size: 4.267vw;
+  }
+
+  .aboutMain {
+    width: 100%;
+    gap: 7vw;
+  }
+
+  .aboutTech {
+    width: 100%;
+    gap: 7vw;
+  }
+
+  .aboutTech img {
+    align-self: baseline;
+    width: 20%;
+  }
+
+  .aboutUnity {
+    gap: 7vw;
+  }
+  
+  .aboutCode {
+    gap: 7vw;
+  }
+
+
+  @keyframes up-down-ani {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes to-up-ani {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}

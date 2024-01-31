@@ -1,0 +1,45 @@
+.technologies {
+  background: #191919;
+}
+
+.technologiesWrapper {
+  overflow: hidden;
+}
+
+.technologiesWrapper img {
+  width: 15%;
+}
+
+.technologiesList {
+  display: flex;
+  justify-content: space-around;
+  width: 200%;
+  animation: marquee-ani 10s linear infinite;
+}
+
+.technologiesList span {
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes marquee-ani {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (orientation: portrait) {
+  .technologiesWrapper img {
+    width: 15%;
+  }
+  .technologiesList {
+    display: flex;
+    justify-content: space-around;
+    width: 400%;
+    animation: marquee-ani 10s linear infinite;
+  }
+}

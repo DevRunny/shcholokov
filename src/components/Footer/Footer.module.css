@@ -1,0 +1,70 @@
+.footer {
+  padding: 2vw;
+  background: #111111;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.footerContent > span {
+  color: #5b5b5b;
+  font-size: 1.042vw;
+  letter-spacing: 0.313vw;
+}
+
+.footerContent > p {
+  color: #5b5b5b;
+  font-size: 0.8vw;
+}
+
+.footerContent > p > a {
+  color: #9d9d9d;
+  text-decoration: underline;
+}
+
+.qrCode {
+  width: 15vw;
+  border-radius: 2.563vw;
+  transition: 600ms ease-in-out;
+}
+
+.qrCode:hover {
+  scale: 1.05;
+  box-shadow: 0 0.052vw 0.521vw 0.052vw #ff6f00;
+}
+
+@media (orientation: portrait) {
+  .footer {
+    padding: 14vw 0 14vw 0;
+  }
+
+  .footerContent {
+    gap: 7vw;
+  }
+
+  .footerContent > span {
+    text-align: center;
+    font-size: 4.267vw;
+    line-height: 130%;
+    letter-spacing: 0.313vw;
+  }
+
+  .footerContent > p {
+    font-size: 3.267vw;
+  }
+
+  .qrCode {
+    width: 100%;
+    border-radius: 14vw;
+  }
+
+  .qrCode:hover {
+    scale: 1.02;
+    box-shadow: unset;
+  }
+}

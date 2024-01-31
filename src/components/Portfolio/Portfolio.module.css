@@ -1,0 +1,22 @@
+.portfolio {
+  text-align: center;
+  margin: 3.125vw 0 7.292vw 0;
+}
+
+.videoPosts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3.125vw;
+}
+
+@media (orientation: portrait) {
+  .portfolio {
+    margin: 4vw 0 4vw 0;
+  }
+
+  .videoPosts {
+    padding-top: 7vw;
+  }
+}

@@ -1,0 +1,125 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  background: #000000;
+  padding: 1.146vw 0 1.146vw 0;
+  z-index: 10;
+}
+
+.navBarContent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBarContent > a > span {
+  display: flex;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.navBarLinks {
+  display: flex;
+  gap: 3.125vw;
+}
+
+.navBarLinks > li {
+  display: flex;
+}
+
+.navBarLinks > li > a {
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 300ms ease-in-out;
+}
+
+.navBarLinks > li > a:hover {
+  color: #ff6f00;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.navBarLinksMobile {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .navBar {
+    padding: 4vw 0 4vw 0;
+  }
+
+  .navBarContent {
+    z-index: 11;
+  }
+
+  .navBarContent > a > span {
+    font-size: 5.867vw;
+  }
+
+  .navBarLinks {
+    display: none;
+  }
+
+  .burgerMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burgerIcon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    background: url("../../images/burger-icon.svg") no-repeat center;
+    width: 9.333vw;
+    height: 9.333vw;
+    transition: 300ms ease-in-out;
+  }
+
+  .burgerIcon.active {
+    width: 9.333vw;
+    height: 7.333vw;
+    background: url("../../images/close-icon.svg") no-repeat center;
+  }
+
+  .navBarLinksMobile {
+    position: absolute;
+    top: 11.133vw;
+    right: 0;
+    left: 0;
+    padding: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scale: 0;
+    gap: 7vw;
+    background: #111111;
+    transition: 200ms ease-in-out;
+    z-index: 5;
+  }
+
+  .navBarLinksMobile.active {
+    scale: 1;
+  }
+
+  .navBarLinksMobile > li > a {
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 300ms ease-in-out;
+  }
+
+  .navBarLinksMobile > li > a:hover {
+    color: #ff6f00;
+  }
+}

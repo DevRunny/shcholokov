@@ -1,0 +1,92 @@
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 7vw 0 11vw 0;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;
+  animation: title-ani 3.5s forwards;
+}
+
+.mainTitle > span {
+  font-size: 3.333vw;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%;
+  letter-spacing: 0.133vw;
+}
+
+.mainLogo > svg {
+  width: 23.889vw;
+  height: 23.364vw;
+}
+
+.line {
+  fill: #f37219;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 800;
+  animation: line-ani 3.5s forwards;
+}
+
+.face {
+  fill: #ffffff;
+}
+
+.hair {
+  fill: #343434;
+}
+
+@keyframes line-ani {
+  0% {
+    fill-opacity: 0;
+    stroke: #f37219;
+    stroke-width: 2px;
+  }
+
+  100% {
+    filter: none;
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+
+@keyframes title-ani {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (orientation: portrait) {
+  .mainContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7vw;
+    height: 100dvh;
+    margin: 0;
+  }
+
+  .mainTitle {
+    align-items: flex-start;
+  }
+
+  .mainTitle > span {
+    font-size: 10.667vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 130%;
+  }
+
+  .mainLogo > svg {
+    width: 41.717vw;
+    height: 40.8vw;
+  }
+}
