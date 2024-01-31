@@ -24,8 +24,8 @@ export const router = createBrowserRouter([
         path: Routes.DETAILS_POST,
         element: (
           <>
-          <DetailsPost />
-          <Outlet />
+            <DetailsPost />
+            <Outlet />
           </>
         ),
         errorElement: <ErrorPage />,
